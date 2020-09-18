@@ -30,5 +30,4 @@ function Item({todoStore, data}) {
     )
 }
 
-
-export default inject('todoStore')(observer(Item));
+export default inject('todoStore','globalStore')(observer(Item));
